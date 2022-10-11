@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Items } from "./Items";
 import React from "react";
 export function Nav({}) {
