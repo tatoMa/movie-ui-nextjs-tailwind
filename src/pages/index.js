@@ -1,12 +1,10 @@
 import { MainSection } from "../components/MainSection";
 import { Nav } from "../components/Nav";
 
-export default function Home({ result }) {
-  fetch();
-
+export default function Home({ data }) {
+  console.log(data);
   return (
     <div className="relative">
-      {result}
       <Nav />
       <MainSection />
     </div>
@@ -14,10 +12,10 @@ export default function Home({ result }) {
 }
 
 export async function getStaticProps(context) {
-  console.log("hiiii");
+  console.log("console log from backend");
   return {
     props: {
-      result: "ooooo",
+      data: "data from backend",
     }, // will be passed to the page component as props
   };
 }
